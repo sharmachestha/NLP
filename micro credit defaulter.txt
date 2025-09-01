@@ -1,0 +1,25 @@
+Certainly! Here's a concise summary of your Data Engineering project at SVAM International involving the construction of a classification model for predicting defaulters and non-defaulters users:
+
+---
+
+**Project Summary: Telecom Micro-Credit Defaulter Prediction**
+
+During my tenure as a Data Engineer at SVAM International from October 2021 to April 2022, I undertook a pivotal role in developing a classification model aimed at predicting defaulters and non-defaulters within the Telecom Micro-Credit domain. Key aspects of the project include:
+
+1. **Exploratory Data Analysis (EDA):**
+   - Conducted comprehensive EDA to gain insights into the dataset, laying the foundation for informed decision-making during the modeling phase.
+
+2. **Data Preprocessing:**
+   - Implemented robust data preprocessing steps, including the treatment of null values and the removal of outliers. Ensured data quality and integrity for reliable model training.
+
+3. **Model Building:**
+   - Employed various machine learning algorithms to build multiple models. Explored their performance characteristics to identify the most effective approach for the given context.
+
+4. **Random Forest Classifier Success:**
+   - Achieved successful outcomes with the Random Forest Classifier, attaining an impressive accuracy rate of 91%. This model demonstrated high precision in distinguishing between defaulters and non-defaulters.
+
+This project showcased my proficiency in end-to-end model development, encompassing data exploration, preprocessing, and the implementation of a powerful classification model, contributing significantly to effective risk assessment in the Telecom Micro-Credit domain.
+
+---
+
+Feel free to customize this summary based on specific details or achievements you want to highlight during your interview.
