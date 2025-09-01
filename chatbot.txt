@@ -1,22 +1,98 @@
-Certainly! Here's a concise summary of your project at Church and Dwight (Insight) as a Data Engineer working on a Chatbot project:
+Got it ✅ Thanks for sharing both the **screenshots** and the **project write-up**. Let me put everything together and explain your project in **short and simple words**:
 
 ---
 
-**Project Overview: Enhancing OpenAI Chatbot Performance**
+## 🔹 Project Summary – Vulcan AI Bot
 
-As a Data Engineer at Church and Dwight (Insight) from December 2023 to the present, I played a pivotal role in optimizing and refining the performance of an OpenAI-based chatbot. My responsibilities encompassed:
+### 1. **Business Need**
 
-1. **Python Script Optimization:**
-   - Enhanced existing Python scripts to significantly improve the efficiency and overall performance of the OpenAI chatbot.
-
-2. **Database Integration:**
-   - Implemented seamless integration between the chatbot and a SQL database, enabling efficient storage and retrieval of relevant data.
-
-3. **Chatbot Application Development:**
-   - Led the design, development, and successful deployment of a chatbot application using the Bot Framework Emulator. This involved creating a user-friendly interface for smooth interaction.
-
-These efforts collectively contributed to an enhanced and more responsive chatbot experience, showcasing my skills in Python scripting, database connectivity, and end-to-end chatbot application development.
+Church & Dwight wanted a **bot powered by LLM (Large Language Model)** to answer business and sales-related questions.
+The bot should fetch information either from **SQL databases** (sales/DSR tool) or **documents (PDFs/PPTs via Cognitive Search)**.
 
 ---
 
-Feel free to tailor this summary based on specific details or achievements you'd like to highlight during the interview.
+### 2. **Tech Setup (Prerequisites)**
+
+* **Azure Services**: Cognitive Search, OpenAI, Bot Service, Storage Account, Key Vault.
+* **Frontend**: Streamlit (for UI).
+* **Backend**: Python (LangChain + Azure OpenAI).
+* **Data Sources**: SQL Server (DSR data) + Azure Blob Storage (documents).
+
+---
+
+### 3. **Components of the Bot**
+
+1. **DSR Tool (SQL-based Q\&A)**
+
+   * Connects to SQL DB using ODBC driver.
+   * Lets business users query historical sales data.
+   * Implemented in `utils.py (SQLDbTool class)`.
+
+2. **Few-Shot Learning**
+
+   * Uses `prompt.py` examples + embeddings.
+   * Helps model understand the query better by matching with past examples.
+
+3. **DocSearch Tool (Document-based Q\&A)**
+
+   * Loads PDFs/PPTs from **Azure Blob → Cognitive Search Index** (via `load_data_index.ipynb`).
+   * Queries the index for relevant text.
+   * Implemented in `utils.py (DocSearchTool class)`.
+
+4. **Hyperparameter Tuning**
+
+   * Runs experiments with chunk sizes, neighbors, similarity functions, etc.
+   * Script: `HyperParameterTunning.py`.
+   * Goal: improve retrieval accuracy and response quality.
+
+5. **Logging & Tracking**
+
+   * Application and LangChain logs stored in **Azure Blob Storage** with timestamps.
+
+---
+
+### 4. **Flow**
+
+* **User asks a question** (via frontend Streamlit UI).
+* **Bot decides** → If query is sales-related, it goes to **DSR Tool (SQL)**. If it’s document-related, it goes to **DocSearch Tool (Cognitive Search)**.
+* The retrieved data is passed to **Azure OpenAI (GPT)** to generate a natural response.
+* Response is shown to the user.
+
+---
+
+### 5. **Next Steps (Improvements Suggested)**
+
+* Clean and preprocess data (stopwords, stemming, lemmatization).
+* Explore **LlamaIndex** instead of LangChain for better performance.
+* Add **data visualization dashboards**.
+* Improve frontend/backend so user doesn’t need to explicitly type `@dsr` or `@docsearch`.
+* Conduct **user testing** for feedback.
+
+---
+
+## 📝 In One Line:
+
+You built a **GenAI-powered bot** that answers business questions using **SQL sales data + documents stored in Azure Cognitive Search**, with backend in **LangChain + Azure OpenAI**, frontend in **Streamlit**, and added **hyperparameter tuning, logging, and few-shot examples** to make responses more accurate.
+
+---
+
+👉 Do you also want me to create a **2-minute interview-style explanation** (something you can say directly if asked "Tell me about this project")?
+
+
+From your project explanation, here’s the clear answer 👇
+
+OpenAI Library used → You are using LangChain with OpenAI (for LLM queries, prompt management, and response generation).
+
+For embeddings → You are using OpenAI Embeddings (imported inside your utils.py and prompt.py logic).
+
+These embeddings are used in two main places:
+
+FewShots Implementation → to embed the examples from prompt.py and find the closest match with user query.
+
+DocSearch Tool & Hyperparameter Tuning → to embed documents (from PDFs/PPTs stored in Azure Blob) and perform similarity search inside Azure Cognitive Search index.
+
+⚡ So in short:
+
+LLM Calls → OpenAI (via LangChain).
+
+Embeddings → OpenAIEmbeddings class from OpenAI, integrated with LangChain + Azure Cognitive Search.
