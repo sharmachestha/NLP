@@ -4,7 +4,7 @@ Certainly! Here's a succinct summary of your Data Engineering project involving 
 
 **Project Summary: Azure SQL Database Management**
 
-In my role as a Data Engineer, I successfully orchestrated the establishment and administration of an Azure SQL database housing over 5 million records. Key project highlights include:
+In my role as a Data Analyst, I successfully orchestrated the establishment and administration of an Azure SQL database housing over 5 million records. Key project highlights include:
 
 1. **Database Setup:**
    - Initiated the setup of a robust Azure SQL database infrastructure, ensuring a scalable and secure environment for efficient data management.
