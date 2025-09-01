@@ -67,3 +67,17 @@ Ensured business continuity with hotfixes for critical global datasets.
 👉 This way you’ll show both technical expertise (SQL, data models, API integrations, macros) and business impact (accuracy in financial reporting, scalable models, reduced manual effort).
 
 Do you want me to also make a 1–2 minute elevator pitch version (very concise) in case the interviewer asks “Tell me about your contribution to HDP” directly?
+
+Here are some common challenges you might highlight (in short and simple words):
+
+Data Quality Issues – Missing values, inconsistent formats, and duplicates in the raw data needed cleaning before use.
+
+Complex SQL Lineage – Tracing how columns flowed from staging to final tables was tricky, especially across multiple joins.
+
+Performance Optimization – Some queries and pipelines were slow due to large datasets, so tuning was required.
+
+Join & Mapping Validation – Ensuring product, customer, and sales data joined correctly without mismatches.
+
+Testing Continuity – Validating weekly data continuity (no missing weeks) across source and mart datasets.
+
+Collaboration & Reviews – Coordinating with team (PJ, Carlos, Vikrant, etc.) for code reviews and aligning on logic.
