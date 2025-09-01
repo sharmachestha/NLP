@@ -1,0 +1,69 @@
+How to Explain Your Contribution in HDP Project
+
+1. Overview of your role
+"I was actively involved in the HDP project where I contributed to building, maintaining, and optimizing data pipelines, financial models, and reporting layers. My primary responsibilities included fixing data quality issues, implementing new business logic, and ensuring accurate financial reporting across different geographies."
+
+2. Key Contributions (with examples from PRs)
+
+Data Quality & Validation:
+
+
+
+Fixed null handling in financial models (e.g., Italy P&L unioned model).
+
+Removed duplicates in Allocation AI Trading Economics datasets to improve data accuracy.
+
+Added validation logic for UK Brand P&L to ensure correctness of allocations.
+
+
+
+
+Enhancing Data Models:
+
+Updated Nielsen tables and beer models to align with evolving business needs.
+
+Refactored brand P&L models for better maintainability and scalability.
+
+Updated Mercury Brand P&L data source and hash tables to support new reporting requirements.
+
+
+
+
+Business Logic Changes & Hotfixes:
+
+Implemented fixes for conversion rate logic in Global Nielsen datasets.
+
+Corrected CPI data ingestion for Trading Economics.
+
+Added backup reference sources for resiliency in data pipelines.
+
+Optimization & Process Improvements:
+
+Dropped unused models like Sell Out Retailer to streamline the pipeline.
+
+Modified macros to automate P&L reporting and reduce manual intervention.
+
+Updated primary key structures to improve joinability and performance.
+
+API & External Data Integration:
+
+Worked on Weather API ingestion logic with location-based flexibility.
+
+Integrated Trading Economics datasets (CPI, allocation, etc.) ensuring consistency with financial models.
+
+3. Impact of Work
+
+Improved data accuracy and reliability in financial and allocation reporting.
+
+Reduced manual rework by automating macros and fixing recurring data issues.
+
+Enhanced system performance by cleaning models and restructuring keys.
+
+Ensured business continuity with hotfixes for critical global datasets.
+
+4. How you can phrase it in interview
+"In the HDP project, my contributions revolved around improving data accuracy, optimizing financial models, and integrating external datasets. For example, I fixed conversion rate logic in Nielsen data, cleaned up duplicates in Allocation AI, and automated macros for P&L reporting. I also worked on API integrations like the Weather API and made schema improvements such as updating primary keys for better joinability. Overall, my work helped ensure data consistency, reliability, and performance across the pipelines."
+
+👉 This way you’ll show both technical expertise (SQL, data models, API integrations, macros) and business impact (accuracy in financial reporting, scalable models, reduced manual effort).
+
+Do you want me to also make a 1–2 minute elevator pitch version (very concise) in case the interviewer asks “Tell me about your contribution to HDP” directly?
