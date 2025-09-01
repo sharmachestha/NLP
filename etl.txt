@@ -1,0 +1,44 @@
+Certainly! Here's a concise and clear summary for explaining the project to an interviewer:
+
+---
+
+In my recent project, I developed a comprehensive Data Warehouse and Reporting Solution for Pharma Sales data, integrating various data sources. The project involved creating robust data processing pipelines using Spark SQL and PySpark to efficiently ingest and integrate complex data feeds into relational databases.
+
+Working in a sprint-based Agile model, we continuously enhanced the system to meet evolving business needs. Additionally, I applied rigorous Data Quality checks to ensure the data met the business rules and client expectations. This project aimed to provide a centralized, reliable, and high-quality data hub for insightful sales reporting and analysis in the pharmaceutical industry.
+
+---
+
+Feel free to modify this as needed to better match your specific experiences and contributions!
+
+Yes, you can say that you are adding all the data coming from different sources into PostgreSQL. Here’s a detailed breakdown of how this is done in your script:
+
+1. **Extract data from different sources**:
+   - **CSV File**: Read data from a CSV file.
+   - **Database**: Read data from another database using a JDBC connection.
+   - **API**: Fetch data from an API and convert it into a DataFrame.
+
+2. **Transform data - Cleaning**:
+   - Remove duplicates from each DataFrame.
+
+3. **Load data into PostgreSQL**:
+   - **Cleaned CSV Data**: Write the cleaned CSV data into a PostgreSQL table named `csv_data`.
+   - **Cleaned Database Data**: Write the cleaned database data into a PostgreSQL table named `db_data`.
+   - **Cleaned API Data**: Write the cleaned API data into a PostgreSQL table named `api_data`.
+
+4. **Integrate data**:
+   - Join the cleaned DataFrames from the different sources on a common key.
+
+5. **Data Quality Checks**:
+   - Perform various data quality checks such as checking for null values, duplicates, data types, range checks, value checks, consistency checks, referential integrity, and outlier detection.
+
+6. **Store integrated data**:
+   - Write the integrated and quality-checked data into a PostgreSQL table named `integrated_data`.
+
+Here’s a summary of how the data from different sources is added to PostgreSQL:
+
+- **CSV Data**: Stored in the `csv_data` table.
+- **Database Data**: Stored in the `db_data` table.
+- **API Data**: Stored in the `api_data` table.
+- **Integrated and Quality-checked Data**: Stored in the `integrated_data` table.
+
+Therefore, all the data coming from different sources is indeed being added to PostgreSQL in various tables, both at the individual data source level and after integration and quality checks.
