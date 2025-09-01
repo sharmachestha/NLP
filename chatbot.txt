@@ -1,0 +1,22 @@
+Certainly! Here's a concise summary of your project at Church and Dwight (Insight) as a Data Engineer working on a Chatbot project:
+
+---
+
+**Project Overview: Enhancing OpenAI Chatbot Performance**
+
+As a Data Engineer at Church and Dwight (Insight) from December 2023 to the present, I played a pivotal role in optimizing and refining the performance of an OpenAI-based chatbot. My responsibilities encompassed:
+
+1. **Python Script Optimization:**
+   - Enhanced existing Python scripts to significantly improve the efficiency and overall performance of the OpenAI chatbot.
+
+2. **Database Integration:**
+   - Implemented seamless integration between the chatbot and a SQL database, enabling efficient storage and retrieval of relevant data.
+
+3. **Chatbot Application Development:**
+   - Led the design, development, and successful deployment of a chatbot application using the Bot Framework Emulator. This involved creating a user-friendly interface for smooth interaction.
+
+These efforts collectively contributed to an enhanced and more responsive chatbot experience, showcasing my skills in Python scripting, database connectivity, and end-to-end chatbot application development.
+
+---
+
+Feel free to tailor this summary based on specific details or achievements you'd like to highlight during the interview.
