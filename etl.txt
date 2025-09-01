@@ -42,3 +42,33 @@ Here’s a summary of how the data from different sources is added to PostgreSQL
 - **Integrated and Quality-checked Data**: Stored in the `integrated_data` table.
 
 Therefore, all the data coming from different sources is indeed being added to PostgreSQL in various tables, both at the individual data source level and after integration and quality checks.
+
+Data from Multiple Sources
+
+Challenge: CSVs, APIs, and databases all had different formats, schema mismatches, and sometimes duplicate records.
+
+How I dealt with it: Applied standardization during ingestion (using PySpark for schema alignment, deduplication, and null handling) before loading into PostgreSQL.
+
+Data Quality & Consistency
+
+Challenge: Null values, incorrect data types, and outliers were present in raw feeds.
+
+How I dealt with it: Built data quality checks (null checks, referential integrity checks, range validations) as part of the ETL pipeline.
+
+Integration Logic (Joins Across Sources)
+
+Challenge: Joining data across different sources often led to mismatched keys or missing records.
+
+How I dealt with it: Created standardized surrogate keys and validated join outputs with sample test cases to ensure correctness.
+
+Performance Issues
+
+Challenge: Running transformations on large datasets slowed down the pipeline.
+
+How I dealt with it: Used Spark optimizations (partitioning, caching, broadcast joins) to improve processing speed.
+
+Agile & Frequent Changes
+
+Challenge: Business users kept refining requirements sprint by sprint.
+
+How I dealt with it: Kept ETL scripts modular and reusable so changes were easier to accommodate.
