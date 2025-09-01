@@ -1,0 +1,25 @@
+Certainly! Here's a brief summary of your Data Engineering project at SCA- School Construction Authority (SVAM International) from June 2019 to September 2021:
+
+---
+
+**Project Overview: Enhancing Data Retrieval and Analysis for SCA**
+
+As a Data Engineer at SCA- School Construction Authority with SVAM International, I played a key role in improving data retrieval and analysis capabilities by focusing on the following:
+
+1. **Functional Requirement Understanding:**
+   - Collaborated closely with stakeholders to comprehend functional requirements, ensuring a clear understanding of the data needs and objectives.
+
+2. **Design and Implementation:**
+   - Led the design phase, translating functional requirements into effective data structures and processes. Implemented robust solutions that aligned with project goals.
+
+3. **SQL Query and Stored Procedure Development:**
+   - Developed and implemented SQL queries and stored procedures to extract, manipulate, and organize data efficiently. This initiative was crucial for enhancing the data retrieval process.
+
+4. **SSRS Reports Generation:**
+   - Leveraged Visual Studio to create and implement SQL Server Reporting Services (SSRS) reports. These reports provided stakeholders with insightful and actionable data visualizations, fostering improved decision-making.
+
+This project underscored my expertise in translating business needs into technical solutions, with a focus on optimizing data retrieval and analysis processes for the School Construction Authority.
+
+---
+
+Feel free to modify this summary based on specific achievements or details you want to emphasize during your interview.
