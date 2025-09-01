@@ -1,0 +1,6 @@
+Hello Everyone, My name is Chestha Sharma and As a data engineer with about four years of experience in the field, my primary focus is on translating business problems into analytical and automated solutions using a variety of tools 
+and techniques, including Python, SQl, Machine Learning, Statistics, Tableau, SSRS and Visual Studio 2017
+. I have learned that having a solid foundation in data import, cleaning, testing, and deployment is crucial for success in this role.
+
+
+"I'm not familiar with that concept, but I'm always eager to learn. Could you provide more details or guidance?"
