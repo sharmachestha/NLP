@@ -72,3 +72,19 @@ Agile & Frequent Changes
 Challenge: Business users kept refining requirements sprint by sprint.
 
 How I dealt with it: Kept ETL scripts modular and reusable so changes were easier to accommodate.
+
+Databases and Datawarehouse ka difference 
+
+database -  1. relational or object oriented 
+            2. two dimensional data
+            3. small in size (gb)
+            4. transactional processing 
+            5. High availability and performance
+            6. er based and application oriented design 
+
+Datawarehouse - 1. large Volume with multiple datatypes 
+                2. multi dimensional data 
+                3. large in size (tb) 
+                4. data modelling and analysis
+                5.high flexibility and user automation
+                6. star/ snowflake schema and subject oriented design
